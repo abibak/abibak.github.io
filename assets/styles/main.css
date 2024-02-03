@@ -1,0 +1,682 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.center-position {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.highlighted-title {
+    color: #F54932;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%;
+    text-transform: uppercase;
+}
+
+#main {
+    /* max-width: 1920px; */
+    background-color: #e9ded4;
+    position: relative;
+}
+
+#main #main__container {
+    width: 100%;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+}
+
+.background .background__main,
+.background .background__elements,
+.background__horse,
+.background__pawn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.background .background__elements {
+    background: url("../images/background_elements.png") no-repeat;
+    background-position: top center;
+}
+
+.background .background__main {
+    background: url("../images/background.png");
+    mix-blend-mode: color-burn;
+}
+
+.background__horse {
+    background: url("../images/horse.png") no-repeat;
+    background-position: 64% 100%;
+}
+
+.background__pawn {
+    background: url("../images/pawn.png") no-repeat;
+    background-position: 82% 97%;
+}
+
+#main .main-section {
+    height: 700px;
+    position: relative;
+}
+
+.main-section__container {
+    width: 100%;
+    max-width: 1366px;
+    padding: 0 72px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+}
+
+/* header */
+.header {
+    display: flex;
+    align-items: flex-end;
+    max-width: 100%;
+    height: 64px;
+}
+
+.header__logo {
+    display: flex;
+}
+
+.header__logo .header__icons {
+    display: flex;
+}
+
+.header__logo .header__icons svg {
+    margin-right: 1.7px;
+}
+
+.header__logo .header__icons svg:last-child {
+    margin-right: 6px;
+}
+
+.header__logo .header__title {
+    max-width: 147px;
+    font-family: "Golos text", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #595653;
+}
+
+/* main section content */
+.main-section__content {
+    max-width: 542px;
+    margin-top: 62px;
+}
+
+.main-section__title p {
+    color: #060606;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+.main-section__title p:nth-of-type(2) {
+    text-align: center;
+}
+
+.main-section__title p:nth-of-type(3) {
+    text-align: right;
+}
+
+.main-section__info-payment {
+    margin-top: 24px;
+    color: #151515;
+    text-align: center;
+    font-family: "Golos Text", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.main-section__btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* ticker */
+.ticker {
+    width: 100%;
+    height: 60px;
+    background: #f54932;
+    color: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+}
+
+.ticker__container {
+    position: absolute;
+}
+
+.ticker__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticker__text {
+    flex-shrink: 0;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.ticker__ellipse {
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    margin: 0 12px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.wrapper {
+    background-color: #fff;
+}
+
+.wrapper__content {
+    padding: 0 72px;
+}
+
+/* support tournament */
+.support-tournament {
+    margin-top: 60px;
+    background-color: #fff;
+}
+
+.support-tournament__container {
+    padding-top: 107px;
+}
+
+.support-tournament__top-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.support-tournament__top-side .support-tournament__img {
+    width: 394px;
+    height: 250px;
+    border-radius: 100%;
+    background: url("../images/players_tournament.png") lightgray 50% / cover no-repeat;
+    position: relative;
+}
+
+.support-tournament__top-side .support-tournament__img::after {
+    content: "";
+    background: url(../images/background.png) lightgray -177.324px -304.651px / 121.971% 265.886% no-repeat;
+    background-position: center;
+    mix-blend-mode: color-burn;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.support-tournament__top-side .support-tournament__title {
+    width: 764px;
+    height: 195px;
+}
+
+.support-tournament__top-side .support-tournament__title p {
+    color: #313131;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    text-transform: uppercase;
+}
+
+.support-tournament__info {
+    margin-top: 64px;
+}
+
+.support-tournament__info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.support-tournament__info-wrap-image {
+    width: 474px;
+    height: 527px;
+    flex-shrink: 0;
+}
+
+.support-tournament__info-image {
+    background: url("../images/playing_chess.png") no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.support-tournament__info-title p {
+    color: #313131;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    text-transform: uppercase;
+}
+
+.support-tournament__about-event {
+    max-width: 704px;
+    padding-left: 44px;
+}
+
+.support-tournament__info-details {
+    margin-top: 60px;
+}
+
+.support-tournament__info-table-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: baseline;
+}
+
+.support-tournament__info-table-item {
+    font-weight: 600;
+}
+
+.support-tournament__info-table-item-prop,
+.support-tournament__info-table-item {
+    padding: 16px;
+    border-bottom: 2px solid #D0D0D0;
+    color: #313131;
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 120%;
+}
+
+.support-tournament__info-table-item-prop {
+    padding: 16px 16px 16px 0;
+}
+
+.support-tournament__info-table-item:last-child, .support-tournament__info-table-item-prop:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.support-tournament__info-table-old-price {
+    padding: 0;
+    margin-right: 12px;
+    position: relative;
+}
+
+.support-tournament__info-table-old-price::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #F54932;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.support-tournament__info-contact-admin {
+    display: block;
+    margin-top: 48px;
+    color: #3057A2;
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+/* stages section */
+.stages-section {
+    margin-top: 200px;
+}
+
+.stages-section__container {
+    width: 100%;
+    position: relative;
+}
+
+.stages-section__container::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/propeller_plane.png") no-repeat;
+    background-position: 110% 95%;
+    position: absolute;
+    z-index: 1;
+}
+
+.stages-section__title {
+    max-width: 806px;
+    color: #313131;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.stages-section__title .sub-title {
+    display: inline-block;
+    color: #3057A2;
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: initial;
+}
+
+.stages-section__stages-blocks-wrapper {
+    height: 400px;
+    margin-top: 54px;
+    position: relative;
+}
+
+.stages-section__stages-blocks {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 394px));
+    grid-template-rows: auto auto auto;
+    grid-auto-flow: row;
+    gap: 20px;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.stages-section__stages-blocks-item {
+    display: flex;
+    height: 100%;
+    padding: 20px;
+    background: url("../images/background_stage_block.png");
+    position: relative;
+}
+
+.stages-section__stages-blocks-item::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("../images/background.png") lightgray -189.829px -325.764px / 121.971% 265.886%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    mix-blend-mode: color-burn;
+}
+
+.stages-section__stages-blocks-item:nth-of-type(3) {
+    grid-row: span 2;
+    row-gap: 20px;
+}
+
+.stages-section__stages-blocks-item:nth-of-type(7) {
+    grid-column: span 2;
+}
+
+.stages-section__stages-blocks-item:nth-of-type(7) > .stages-section__stages-blocks-text {
+    max-width: 446px;
+}
+
+.stages-section__stages-blocks-text {
+    max-width: 302px;
+    width: 100%;
+    padding-left: 16px;
+}
+
+.stages-section__stages-blocks-text > p {
+    color: #313131;
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.stages-section__stages-blocks-number {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    color: #313131;
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* tournament participants */
+
+.tournament-participants {
+    margin-top: 200px;
+}
+
+.tournament-participants__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tournament-participants__title > p {
+    color: #313131;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.buttons-slider {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.buttons-slider__left-button,
+.buttons-slider__right-button {
+    max-width: 44px;
+    max-height: 44px;
+}
+
+.tournament-participants__counter > span {
+    color: #313131;
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    vertical-align: middle;
+}
+
+.tournament-participants__counter-count {
+    padding-left: 14px;
+}
+
+.tournament-participants__counter-length {
+    padding-right: 14px;
+}
+
+/* slider */
+.tournament-participants__slider {
+    height: 462px;
+    max-width: 1222px;
+    margin: 60px auto 0 auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.tournament-participants__slider-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 0;
+    transition: left 1.05s ease;
+}
+
+.tournament-participants__slider-element {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    max-width: 394px;
+    height: 462px;
+    width: 100%;
+    padding: 0 37px;
+    text-align: center;
+}
+
+.tournament-participants__slider-element:nth-child(3n) {
+    margin-right: 0;
+}
+
+.tournament-participants__slider-element:nth-child(4n) {
+    margin-left: 0;
+}
+
+.tournament-participants__slider-element-player {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: #424241;
+    position: relative;
+}
+
+.tournament-participants__slider-element-player::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1;
+    background: url("../images/background_stage_block.png") lightgray -1206.482px 0px / 254.733% 100%;
+    opacity: .8;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tournament-participants__slider-element-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: url("../images/slider-player.png") no-repeat;
+    background-position: bottom;
+    z-index: 2;
+    position: sticky;
+}
+
+.tournament-participants__slider-element-name {
+    color: #313131;
+    font-family: "Golos Text", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-top: 28px;
+}
+
+.tournament-participants__slider-element-status {
+    color: #313131;
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-top: 6px;
+}
+
+.tournament-participants__slider-element-button {
+    margin-top: 20px;
+}
+
+/* ticker number 2 */
+.wrapper__content > .ticker {
+    margin-top: 140px;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    margin-top: 200px;
+    background: #E9DED4;
+    position: absolute;
+    left: 0;
+}
+
+.footer__container {
+    max-width: 1222px;
+    padding: 42px 0 72px 0;
+    margin: 0 auto;
+}
+
+.footer__container > p {
+    color: #313131;
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.stage-section__button-controls {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+    position: relative;
+    z-index: 1;
+}
+
+.stage-section__button-controls-pagination-item[data-active="on"] {
+    background-color: #313131;
+}
+
+.stage-section__button-controls-pagination-item {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.stage-section__button-controls-pagination-item:last-child {
+    margin-right: 0;
+}
+
+.stage-section__button-controls-prev, .stage-section__button-controls-next {
+    display: flex;
+}
+
+.stage-section__button-controls-prev {
+    margin-right: 16px;
+}
+
+.stage-section__button-controls-next {
+    margin-left: 16px;
+}
